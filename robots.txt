@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mirkostaropoli.github.io/fitness-club-torino/sitemap.xml
