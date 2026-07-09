@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://amministrazione-gif.github.io/fitness-club-torino/sitemap.xml
+Sitemap: https://mirkostaropoli.github.io/fitness-club-torino/sitemap.xml
