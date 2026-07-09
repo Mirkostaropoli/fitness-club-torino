@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Fitness Club Torino | Fitness party, musica e healthy bar</title>
+  <meta name="description" content="Fitness Club porta il training dentro la discoteca: sessioni fitness, DJ set, luci, contenuti social e healthy bar per palestre, trainer e brand a Torino." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#0b0f14" />
+  <meta name="author" content="Fitness Club Torino" />
+  <link rel="canonical" href="https://amministrazione-gif.github.io/fitness-club-torino/" />
+  <link rel="icon" type="image/png" href="fitness-club-hero.png" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:site_name" content="Fitness Club Torino" />
+  <meta property="og:title" content="Fitness Club Torino | Il workout incontra la nightlife" />
+  <meta property="og:description" content="Un format pomeridiano per palestre, trainer e brand: fitness class, musica, discoteca, healthy bar e contenuti social." />
+  <meta property="og:url" content="https://amministrazione-gif.github.io/fitness-club-torino/" />
+  <meta property="og:image" content="https://amministrazione-gif.github.io/fitness-club-torino/fitness-club-hero.png" />
+  <meta property="og:image:alt" content="Fitness Club Torino, evento fitness in discoteca con luci, musica e bar healthy" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Fitness Club Torino | Fitness party, musica e healthy bar" />
+  <meta name="twitter:description" content="Training session, DJ set, luci e healthy bar dentro una discoteca torinese." />
+  <meta name="twitter:image" content="https://amministrazione-gif.github.io/fitness-club-torino/fitness-club-hero.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://amministrazione-gif.github.io/fitness-club-torino/#organization",
+        "name": "Fitness Club Torino",
+        "url": "https://amministrazione-gif.github.io/fitness-club-torino/",
+        "logo": "https://amministrazione-gif.github.io/fitness-club-torino/fitness-club-hero.png",
+        "sameAs": [
+          "https://www.instagram.com/tuxedo.torino/",
+          "https://www.tuxedotorino.com/"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+393286129173",
+          "contactType": "partnership",
+          "areaServed": "IT",
+          "availableLanguage": ["it"]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://amministrazione-gif.github.io/fitness-club-torino/#website",
+        "name": "Fitness Club Torino",
+        "url": "https://amministrazione-gif.github.io/fitness-club-torino/",
+        "publisher": {
+          "@id": "https://amministrazione-gif.github.io/fitness-club-torino/#organization"
+        },
+        "inLanguage": "it-IT"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://amministrazione-gif.github.io/fitness-club-torino/#webpage",
+        "url": "https://amministrazione-gif.github.io/fitness-club-torino/",
+        "name": "Fitness Club Torino | Fitness party, musica e healthy bar",
+        "description": "Fitness Club porta il training dentro la discoteca: sessioni fitness, DJ set, luci, contenuti social e healthy bar per palestre, trainer e brand a Torino.",
+        "isPartOf": {
+          "@id": "https://amministrazione-gif.github.io/fitness-club-torino/#website"
+        },
+        "about": {
+          "@id": "https://amministrazione-gif.github.io/fitness-club-torino/#organization"
+        },
+        "inLanguage": "it-IT"
+      },
+      {
+        "@type": "Event",
+        "@id": "https://amministrazione-gif.github.io/fitness-club-torino/#format",
+        "name": "Fitness Club Torino",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "description": "Format fitness in discoteca con trainer, DJ set, healthy bar e partnership con palestre e brand.",
+        "location": {
+          "@type": "Place",
+          "name": "Tuxedo Torino",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Via Giacinto Avet 3/B",
+            "addressLocality": "Torino",
+            "addressCountry": "IT"
+          }
+        },
+        "organizer": {
+          "@id": "https://amministrazione-gif.github.io/fitness-club-torino/#organization"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0f14;
+      color: #f5f7fb;
+      line-height: 1.5;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    header {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 20;
+      background: rgba(11, 15, 20, 0.82);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(18px);
+    }
+
+    .nav {
+      width: min(1160px, calc(100% - 32px));
+      margin: 0 auto;
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: grid;
+      gap: 0;
+      text-transform: uppercase;
+      font-weight: 900;
+      letter-spacing: 0;
+    }
+
+    .brand strong {
+      font-size: 23px;
+      line-height: 1;
+    }
+
+    .brand span {
+      color: #b7ff2a;
+      font-size: 12px;
+      line-height: 1.2;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      color: rgba(245, 247, 251, 0.82);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .nav-links a:hover {
+      color: #b7ff2a;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border: 1px solid rgba(183, 255, 42, 0.72);
+      background: #b7ff2a;
+      color: #0b0f14;
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: 13px;
+      border-radius: 6px;
+      box-shadow: 0 0 24px rgba(183, 255, 42, 0.22);
+    }
+
+    .cta.secondary {
+      background: rgba(255, 255, 255, 0.08);
+      color: #f5f7fb;
+      border-color: rgba(255, 255, 255, 0.22);
+      box-shadow: none;
+    }
+
+    .hero {
+      min-height: 92vh;
+      display: flex;
+      align-items: end;
+      position: relative;
+      overflow: hidden;
+      background-image:
+        linear-gradient(90deg, rgba(11, 15, 20, 0.95) 0%, rgba(11, 15, 20, 0.66) 45%, rgba(11, 15, 20, 0.26) 100%),
+        linear-gradient(180deg, rgba(11, 15, 20, 0.14) 0%, rgba(11, 15, 20, 0.76) 100%),
+        url("fitness-club-hero.png");
+      background-size: cover;
+      background-position: center;
+      padding: 128px 0 52px;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0;
+      height: 160px;
+      background: linear-gradient(180deg, rgba(11, 15, 20, 0), #0b0f14);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      width: min(1160px, calc(100% - 32px));
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: minmax(0, 760px);
+      gap: 26px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      min-height: 34px;
+      padding: 0 12px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: #b7ff2a;
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      border-radius: 999px;
+    }
+
+    h1 {
+      max-width: 720px;
+      font-size: clamp(54px, 8vw, 112px);
+      line-height: 0.88;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 700px;
+      color: rgba(245, 247, 251, 0.84);
+      font-size: clamp(18px, 2vw, 23px);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 4px;
+    }
+
+    .proof {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .proof-item {
+      min-height: 102px;
+      padding: 18px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.13);
+      border-radius: 8px;
+    }
+
+    .proof-item strong {
+      display: block;
+      color: #ffffff;
+      font-size: 22px;
+      line-height: 1.1;
+    }
+
+    .proof-item span {
+      display: block;
+      margin-top: 8px;
+      color: rgba(245, 247, 251, 0.72);
+      font-size: 13px;
+    }
+
+    section {
+      padding: 88px 0;
+    }
+
+    .wrap {
+      width: min(1160px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr);
+      gap: 44px;
+      align-items: end;
+      margin-bottom: 34px;
+    }
+
+    h2 {
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 0.98;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    .section-head p,
+    .text p {
+      color: rgba(245, 247, 251, 0.74);
+      font-size: 17px;
+    }
+
+    .band {
+      background: #f5f7fb;
+      color: #0b0f14;
+    }
+
+    .band .section-head p,
+    .band .text p {
+      color: rgba(11, 15, 20, 0.72);
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .step,
+    .partner-card {
+      min-height: 250px;
+      padding: 22px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .band .step,
+    .band .partner-card {
+      background: #ffffff;
+      border-color: rgba(11, 15, 20, 0.1);
+      box-shadow: 0 18px 55px rgba(11, 15, 20, 0.08);
+    }
+
+    .num {
+      width: 42px;
+      height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+      border-radius: 50%;
+      background: #b7ff2a;
+      color: #0b0f14;
+      font-weight: 900;
+    }
+
+    h3 {
+      font-size: 23px;
+      line-height: 1.08;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    .step p,
+    .partner-card p,
+    li {
+      color: rgba(245, 247, 251, 0.72);
+      font-size: 15px;
+    }
+
+    .band .step p,
+    .band .partner-card p {
+      color: rgba(11, 15, 20, 0.7);
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+      gap: 42px;
+      align-items: center;
+    }
+
+    .visual {
+      min-height: 520px;
+      border-radius: 8px;
+      background-image:
+        linear-gradient(180deg, rgba(11, 15, 20, 0.12), rgba(11, 15, 20, 0.72)),
+        url("fitness-club-hero.png");
+      background-size: cover;
+      background-position: center;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 28px 90px rgba(0, 0, 0, 0.32);
+    }
+
+    .text {
+      display: grid;
+      gap: 22px;
+    }
+
+    .list {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+      margin-top: 4px;
+    }
+
+    .list li {
+      min-height: 52px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 16px;
+      color: rgba(245, 247, 251, 0.82);
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 8px;
+    }
+
+    .list li::before {
+      content: "";
+      flex: 0 0 10px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #b7ff2a;
+      box-shadow: 0 0 18px rgba(183, 255, 42, 0.65);
+    }
+
+    .partners {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .partner-card {
+      min-height: 220px;
+    }
+
+    .partner-card strong {
+      display: inline-flex;
+      margin-bottom: 18px;
+      color: #ff2d71;
+      font-size: 13px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .contact {
+      padding: 92px 0;
+      background:
+        linear-gradient(90deg, rgba(11, 15, 20, 0.96), rgba(11, 15, 20, 0.74)),
+        url("fitness-club-hero.png");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .contact-box {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 34px;
+      align-items: center;
+      padding: 34px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 8px;
+      backdrop-filter: blur(16px);
+    }
+
+    .contact-box p {
+      margin-top: 14px;
+      max-width: 760px;
+      color: rgba(245, 247, 251, 0.78);
+      font-size: 18px;
+    }
+
+    footer {
+      padding: 28px 0;
+      background: #080b10;
+      color: rgba(245, 247, 251, 0.62);
+      font-size: 13px;
+    }
+
+    .footer-inner {
+      width: min(1160px, calc(100% - 32px));
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 900px) {
+      .nav {
+        min-height: 66px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        min-height: 88vh;
+        padding-top: 104px;
+      }
+
+      .proof,
+      .steps,
+      .partners,
+      .section-head,
+      .split,
+      .contact-box {
+        grid-template-columns: 1fr;
+      }
+
+      .proof {
+        gap: 10px;
+      }
+
+      .proof-item,
+      .step,
+      .partner-card {
+        min-height: auto;
+      }
+
+      section {
+        padding: 66px 0;
+      }
+
+      .visual {
+        min-height: 360px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .brand strong {
+        font-size: 20px;
+      }
+
+      h1 {
+        font-size: 52px;
+      }
+
+      .hero-actions,
+      .contact-box {
+        align-items: stretch;
+      }
+
+      .cta {
+        width: 100%;
+      }
+
+      .contact-box {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav" aria-label="Navigazione principale">
+      <a class="brand" href="#top" aria-label="Fitness Club Torino">
+        <strong>Fitness Club</strong>
+        <span>Torino</span>
+      </a>
+      <div class="nav-links">
+        <a href="#format">Format</a>
+        <a href="#experience">Esperienza</a>
+        <a href="#partner">Partner</a>
+        <a href="#contatti">Contatti</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <span class="eyebrow">Fitness party in discoteca</span>
+        <h1 id="hero-title">Fitness Club Torino</h1>
+        <p class="lead">Il format che porta il workout dentro la nightlife: trainer, musica, luci, community e healthy bar in un ambiente scenografico pensato per diventare contenuto.</p>
+        <div class="hero-actions">
+          <a class="cta" href="tel:+393286129173">Parliamone</a>
+          <a class="cta secondary" href="https://www.instagram.com/tuxedo.torino/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+        <div class="proof" aria-label="Punti di forza">
+          <div class="proof-item">
+            <strong>1.000+ mq</strong>
+            <span>Location club con luci, audio, palco e bar.</span>
+          </div>
+          <div class="proof-item">
+            <strong>Day format</strong>
+            <span>Evento pomeridiano, prima della nightlife.</span>
+          </div>
+          <div class="proof-item">
+            <strong>Social first</strong>
+            <span>Esperienza costruita per contenuti video.</span>
+          </div>
+          <div class="proof-item">
+            <strong>Healthy bar</strong>
+            <span>Frullati, proteine e drink analcolici.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="format" class="band">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Il format</h2>
+          <p>Fitness Club nasce sulla scia dei morning club e degli eventi fitness in venue non convenzionali che stanno crescendo in Europa. Non è una semplice lezione: è una sessione fisica trasformata in esperienza.</p>
+        </div>
+        <div class="steps">
+          <article class="step">
+            <span class="num">1</span>
+            <h3>Training</h3>
+            <p>Classi guidate da trainer e palestre partner: functional, dance fitness, HIIT, mobility o format su misura.</p>
+          </article>
+          <article class="step">
+            <span class="num">2</span>
+            <h3>Music</h3>
+            <p>DJ set, impianto audio professionale e ritmo costruito intorno alla classe, non come semplice sottofondo.</p>
+          </article>
+          <article class="step">
+            <span class="num">3</span>
+            <h3>Content</h3>
+            <p>Luci, palco, visual e momenti studiati per reel, stories e contenuti condivisibili dalle community.</p>
+          </article>
+          <article class="step">
+            <span class="num">4</span>
+            <h3>Bar</h3>
+            <p>Bar aperto con proposta healthy: frullati, proteici, analcolici e possibili brand partnership.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="wrap split">
+        <div class="visual" role="img" aria-label="Rendering del format Fitness Club in discoteca"></div>
+        <div class="text">
+          <span class="eyebrow">Perché funziona</span>
+          <h2>Una palestra non può sembrare una discoteca. Una discoteca può diventare un evento fitness.</h2>
+          <p>Il valore del progetto è proprio nel cambio di contesto: la community entra in un luogo scenografico, riconoscibile e diverso dalla routine. Il risultato è un evento più desiderabile, più fotografabile e più facile da comunicare.</p>
+          <ul class="list">
+            <li>Ingresso su prenotazione o lista dedicata.</li>
+            <li>Sessione guidata con trainer e musica dal vivo.</li>
+            <li>Area contenuti per video, foto e creator locali.</li>
+            <li>Bar attivo con prodotti coerenti con il mondo fitness.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="partner" class="band">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Partner ideali</h2>
+          <p>Il progetto è pensato per essere costruito con una realtà forte: palestra, trainer, brand nutrizione o sponsor locale. L’obiettivo è creare un format replicabile, non una data isolata.</p>
+        </div>
+        <div class="partners">
+          <article class="partner-card">
+            <strong>Palestre</strong>
+            <h3>Community e iscritti</h3>
+            <p>Evento speciale per attivare gli iscritti, generare contenuti e presentare la palestra a nuovo pubblico.</p>
+          </article>
+          <article class="partner-card">
+            <strong>Trainer</strong>
+            <h3>Classe evento</h3>
+            <p>Un palco diverso per trainer, coach e ambassador che vogliono portare la propria energia fuori dalla sala corsi.</p>
+          </article>
+          <article class="partner-card">
+            <strong>Brand</strong>
+            <h3>Prodotto e sampling</h3>
+            <p>Frullati, prodotti proteici, integratori, drink analcolici e materiali promo dentro un contesto coerente.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contatti" class="contact">
+      <div class="wrap">
+        <div class="contact-box">
+          <div>
+            <span class="eyebrow">Appuntamento conoscitivo</span>
+            <h2>Costruiamo il primo Fitness Club a Torino.</h2>
+            <p>Stiamo cercando partner con cui definire il primo evento: format, data, comunicazione, trainer, bar healthy e contenuti social. Per maggiori informazioni è possibile fissare un incontro o una breve call.</p>
+          </div>
+          <a class="cta" href="tel:+393286129173">Chiama Mirko</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>Fitness Club Torino - Tuxedo Torino, Via Giacinto Avet 3/B</span>
+      <span>Tel. 328 612 9173 - tuxedotorino.com</span>
+    </div>
+  </footer>
+</body>
+</html>
