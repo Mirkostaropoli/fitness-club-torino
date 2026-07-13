@@ -10,7 +10,7 @@
   <meta name="theme-color" content="#0b0f14" />
   <meta name="author" content="Fitness Clubbing" />
   <link rel="canonical" href="https://mirkostaropoli.github.io/fitness-club-torino/" />
-  <link rel="icon" type="image/png" href="fitness-club-hero.png" />
+  <link rel="icon" type="image/png" href="fitness-clubbing-logo.png" />
 
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="it_IT" />
@@ -18,13 +18,13 @@
   <meta property="og:title" content="Fitness Clubbing Torino | Il workout incontra la nightlife" />
   <meta property="og:description" content="Organizzazione eventi per fitness party nelle migliori discoteche: classi guidate, musica, healthy bar, brand partnership e contenuti social." />
   <meta property="og:url" content="https://mirkostaropoli.github.io/fitness-club-torino/" />
-  <meta property="og:image" content="https://mirkostaropoli.github.io/fitness-club-torino/fitness-club-hero.png" />
+  <meta property="og:image" content="https://mirkostaropoli.github.io/fitness-club-torino/fitness-club-hero-orange.png" />
   <meta property="og:image:alt" content="Fitness Clubbing, evento fitness in discoteca con luci, musica e bar healthy" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Fitness Clubbing Torino | Fitness party nelle migliori discoteche" />
   <meta name="twitter:description" content="Workout, DJ set, luci, healthy bar e social content dentro le migliori discoteche." />
-  <meta name="twitter:image" content="https://mirkostaropoli.github.io/fitness-club-torino/fitness-club-hero.png" />
+  <meta name="twitter:image" content="https://mirkostaropoli.github.io/fitness-club-torino/fitness-club-hero-orange.png" />
 
   <script type="application/ld+json">
   {
@@ -35,7 +35,7 @@
         "@id": "https://mirkostaropoli.github.io/fitness-club-torino/#organization",
         "name": "Fitness Clubbing",
         "url": "https://mirkostaropoli.github.io/fitness-club-torino/",
-        "logo": "https://mirkostaropoli.github.io/fitness-club-torino/fitness-club-hero.png",
+        "logo": "https://mirkostaropoli.github.io/fitness-club-torino/fitness-clubbing-logo.png",
         "sameAs": [
           "https://www.instagram.com/fitness.clubbing/"
         ],
@@ -109,6 +109,8 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
+      --accent: #ff7a1a;
+      --accent-rgb: 255, 122, 26;
       background: #0b0f14;
       color: #f5f7fb;
       line-height: 1.5;
@@ -144,22 +146,14 @@
     }
 
     .brand {
-      display: grid;
-      gap: 0;
-      text-transform: uppercase;
-      font-weight: 900;
-      letter-spacing: 0;
+      display: inline-flex;
+      align-items: center;
+      min-width: 188px;
     }
 
-    .brand strong {
-      font-size: 23px;
-      line-height: 1;
-    }
-
-    .brand span {
-      color: #b7ff2a;
-      font-size: 12px;
-      line-height: 1.2;
+    .brand img {
+      width: 188px;
+      height: auto;
     }
 
     .nav-links {
@@ -173,7 +167,7 @@
     }
 
     .nav-links a:hover {
-      color: #b7ff2a;
+      color: var(--accent);
     }
 
     .cta {
@@ -182,14 +176,14 @@
       justify-content: center;
       min-height: 44px;
       padding: 0 18px;
-      border: 1px solid rgba(183, 255, 42, 0.72);
-      background: #b7ff2a;
+      border: 1px solid rgba(var(--accent-rgb), 0.72);
+      background: var(--accent);
       color: #0b0f14;
       font-weight: 900;
       text-transform: uppercase;
       font-size: 13px;
       border-radius: 6px;
-      box-shadow: 0 0 24px rgba(183, 255, 42, 0.22);
+      box-shadow: 0 0 24px rgba(var(--accent-rgb), 0.24);
     }
 
     .cta.secondary {
@@ -208,7 +202,7 @@
       background-image:
         linear-gradient(90deg, rgba(11, 15, 20, 0.95) 0%, rgba(11, 15, 20, 0.66) 45%, rgba(11, 15, 20, 0.26) 100%),
         linear-gradient(180deg, rgba(11, 15, 20, 0.14) 0%, rgba(11, 15, 20, 0.76) 100%),
-        url("fitness-club-hero.png");
+        url("fitness-club-hero-orange.png");
       background-size: cover;
       background-position: center;
       padding: 128px 0 52px;
@@ -241,7 +235,7 @@
       padding: 0 12px;
       background: rgba(255, 255, 255, 0.1);
       border: 1px solid rgba(255, 255, 255, 0.18);
-      color: #b7ff2a;
+      color: var(--accent);
       font-size: 12px;
       font-weight: 900;
       text-transform: uppercase;
@@ -368,7 +362,7 @@
       justify-content: center;
       margin-bottom: 24px;
       border-radius: 50%;
-      background: #b7ff2a;
+      background: var(--accent);
       color: #0b0f14;
       font-weight: 900;
     }
@@ -405,7 +399,7 @@
       border-radius: 8px;
       background-image:
         linear-gradient(180deg, rgba(11, 15, 20, 0.12), rgba(11, 15, 20, 0.72)),
-        url("fitness-club-hero.png");
+        url("fitness-club-hero-orange.png");
       background-size: cover;
       background-position: center;
       border: 1px solid rgba(255, 255, 255, 0.12);
@@ -442,8 +436,8 @@
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      background: #b7ff2a;
-      box-shadow: 0 0 18px rgba(183, 255, 42, 0.65);
+      background: var(--accent);
+      box-shadow: 0 0 18px rgba(var(--accent-rgb), 0.65);
     }
 
     .partners {
@@ -469,7 +463,7 @@
       padding: 92px 0;
       background:
         linear-gradient(90deg, rgba(11, 15, 20, 0.96), rgba(11, 15, 20, 0.74)),
-        url("fitness-club-hero.png");
+        url("fitness-club-hero-orange.png");
       background-size: cover;
       background-position: center;
     }
@@ -552,8 +546,12 @@
     }
 
     @media (max-width: 560px) {
-      .brand strong {
-        font-size: 20px;
+      .brand {
+        min-width: 166px;
+      }
+
+      .brand img {
+        width: 166px;
       }
 
       h1 {
@@ -579,8 +577,7 @@
   <header>
     <nav class="nav" aria-label="Navigazione principale">
       <a class="brand" href="#top" aria-label="Fitness Clubbing Torino">
-        <strong>Fitness Clubbing</strong>
-        <span>Eventi fitness nightlife</span>
+        <img src="fitness-clubbing-logo.png" alt="Fitness Clubbing" width="1400" height="420" />
       </a>
       <div class="nav-links">
         <a href="#format">Format</a>
